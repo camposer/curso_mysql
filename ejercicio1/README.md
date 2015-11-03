@@ -8,7 +8,7 @@ Dada la Base de Datos libreria (libreria.sql):
 - Datos de Librerías
 - Datos de PERSONAS
 - Lectores mayores de 18 años 
--Lista de Personas que son autores, de dos maneras distintas
+- Lista de Personas que son autores, de dos maneras distintas
 	- Usando Subqueries
 	- Usando consulta combinadas
 - Libro más vendido
