@@ -57,7 +57,7 @@ CREATE TABLE compra(
 	id INTEGER AUTO_INCREMENT NOT NULL,
 	libro_id INTEGER NOT NULL,
 	persona_id INTEGER NOT NULL,
-	libreria_id NUMERIC NOT NULL,
+	libreria_id INTEGER NOT NULL,
 	montante NUMERIC NOT NULL,
 	fecha DATE NOT NULL,
 	PRIMARY KEY (id),
