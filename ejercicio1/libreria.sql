@@ -62,6 +62,6 @@ CREATE TABLE compra(
 	fecha DATE NOT NULL,
 	PRIMARY KEY (id),
 	CONSTRAINT fk_compra_libro FOREIGN KEY (libro_id) REFERENCES libro(id),	
-	CONSTRAINT fk_compra_persona FOREIGN KEY (persona_id) REFERENCES persona(id)
+	CONSTRAINT fk_compra_persona FOREIGN KEY (persona_id) REFERENCES persona(id),
 	CONSTRAINT fk_compra_libreria FOREIGN KEY (libreria_id) REFERENCES libreria(id)
 );
