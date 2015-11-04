@@ -2,7 +2,7 @@
 
 CREATE TABLE persona(
 	id INTEGER AUTO_INCREMENT NOT NULL,
-	dni VARCHAR(10),
+	dni VARCHAR(10) NOT NULL,
 	nombre VARCHAR(20) NOT NULL,
 	apellido VARCHAR(20) NOT NULL,
 	fecha_nacimiento DATE,
@@ -61,7 +61,12 @@ CREATE TABLE compra(
 	fecha DATE NOT NULL,
 	PRIMARY KEY (id),
 	CONSTRAINT fk_compra_libro FOREIGN KEY (libro_id) REFERENCES libro(id),	
+<<<<<<< HEAD:ejercicio1/create.sql
 	CONSTRAINT fk_compra_libreria FOREIGN KEY (libreria_id) REFERENCES libreria(id),
 	CONSTRAINT fk_compra_persona FOREIGN KEY (persona_id) REFERENCES persona(id)
+=======
+	CONSTRAINT fk_compra_persona FOREIGN KEY (persona_id) REFERENCES persona(id),
+	CONSTRAINT fk_compra_libreria FOREIGN KEY (libreria_id) REFERENCES libreria(id)
+>>>>>>> a3ff627cbba1d863390c71b3562e2af9520a91c6:ejercicio1/libreria.sql
 );
 
