@@ -1,6 +1,6 @@
 # Ejercicio 1
 
-Dada la Base de Datos libreria (libreria.sql):
+Dada la Base de Datos libreria (create.sql):
 
 1.- Llenar la base de datos con al menos 3 datos por tabla
 
