@@ -37,6 +37,8 @@
 ## Recursos
 
 - MySQL
-  - https://www.mysql.com/
+	- https://www.mysql.com/
 - MySQL Documentation
-  - https://dev.mysql.com/doc/
+	- https://dev.mysql.com/doc/
+- Diapositivas
+	- http://es.slideshare.net/camposer/
