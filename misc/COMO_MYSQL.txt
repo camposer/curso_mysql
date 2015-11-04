@@ -1,0 +1,29 @@
+	1. Utilizando la consolar, ir a la carpeta de instalación de MySQL
+		C:\Archivos de programa\MySQL\MySQL Server 5.7\bin
+
+	2. Ejecutar:
+		> mysql -h localhost -u root -p
+
+	3. Crear  Base de Datos
+		mysql> CREATE DATABASE libreria;
+		mysql> USE libreria;
+		
+	4. Copiar el script libreria.sql y pegarlo en la consola (donde se conectó con mysql)
+
+	5. Ver bases de datos y tablas creadas:
+		mysql> SHOW DATABASES;
+		mysql> SHOW TABLES;
+	
+	6. Para ver ayuda 
+		mysql> help
+
+	7. Borrar una tabla. Intente borrar la tabla: libro... Por qué falla y cómo puedo hacer para borrarla?
+		mysql> DROP TABLE libro ;
+
+	8. Borrar la Base de Datos:
+		mysql> DROP DATABASE;
+
+	9. Volver a ejecutar los pasos 3, 4 y 5
+
+	10. Hacer ejercicio1
+

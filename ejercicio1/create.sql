@@ -1,11 +1,11 @@
--- Database: library
+-- Comandos CREATE
 
 CREATE TABLE persona(
 	id INTEGER AUTO_INCREMENT NOT NULL,
 	dni VARCHAR(10),
 	nombre VARCHAR(20) NOT NULL,
 	apellido VARCHAR(20) NOT NULL,
-	fechaNacimiento DATE,
+	fecha_nacimiento DATE,
 	direccion VARCHAR(255),
 	PRIMARY KEY(id),
 	UNIQUE KEY uq_dni (dni)
@@ -32,7 +32,6 @@ CREATE TABLE libreria(
 
 CREATE INDEX idx_cif ON libreria (cif);
 
-
 CREATE TABLE libro(
 	id INTEGER AUTO_INCREMENT NOT NULL,
 	isbn VARCHAR(15) NOT NULL,
@@ -57,10 +56,12 @@ CREATE TABLE compra(
 	id INTEGER AUTO_INCREMENT NOT NULL,
 	libro_id INTEGER NOT NULL,
 	persona_id INTEGER NOT NULL,
-	rif VARCHAR(12) not null,
+	libreria_id INTEGER NOT NULL,
 	montante NUMERIC NOT NULL,
 	fecha DATE NOT NULL,
 	PRIMARY KEY (id),
 	CONSTRAINT fk_compra_libro FOREIGN KEY (libro_id) REFERENCES libro(id),	
+	CONSTRAINT fk_compra_libreria FOREIGN KEY (libreria_id) REFERENCES libreria(id),
 	CONSTRAINT fk_compra_persona FOREIGN KEY (persona_id) REFERENCES persona(id)
 );
+
