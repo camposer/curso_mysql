@@ -4,7 +4,7 @@
 	2. Ejecutar:
 		> mysql -h localhost -u root -p
 
-	3. Crear  Base de Datos
+	3. Crear  Base de Datos	  		 
 		mysql> CREATE DATABASE libreria;
 		mysql> USE libreria;
 		
