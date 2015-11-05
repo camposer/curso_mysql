@@ -37,4 +37,4 @@ Dada la Base de Datos libreria (create.sql):
 	
 	2.13.- De todos los del catálogo, cuáles nunca han sido comprados por librería, según el histórico de compras
 
-
+3.- Escribir vistas para las consultas 2.10 y 2.11. Espeficar filtros y ver comportamiento
