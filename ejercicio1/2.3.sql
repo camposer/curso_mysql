@@ -7,7 +7,9 @@ no es necesario, es sólo para dar formato...
 
 SELECT DISTINCT p.* 
 FROM compra c, persona p 
-WHERE c.persona_id = p.id AND YEAR(p.fecha_nacimiento) >= 1960;
+WHERE 
+	c.persona_id = p.id AND 
+	p.fecha_nacimiento < CURDATE() - INTERVAL 18 YEAR;
 
 SELECT DISTINCT p.* 
 FROM compra c 
